@@ -3,15 +3,37 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.wolf</groupId>
   <artifactId>springcloud</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>eurekaserver</module>
+    <module>eurekaclient</module>
+      <module>service-ribbon</module>
+      <module>service-feign</module>
+      <module>convert-chinese</module>
+      <module>service-hystrix</module>
+  </modules>
   <name>springcloud Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <!--<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.0.RELEASE</version>
+    <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;
+  </parent>-->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.2.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
