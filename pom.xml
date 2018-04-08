@@ -12,6 +12,7 @@
       <module>service-feign</module>
       <module>convert-chinese</module>
       <module>service-hystrix</module>
+      <module>service-zuul</module>
   </modules>
   <name>springcloud Maven Webapp</name>
   <url>http://maven.apache.org</url>
