@@ -13,6 +13,7 @@
       <module>convert-chinese</module>
       <module>service-hystrix</module>
       <module>service-zuul</module>
+      <module>service-config</module>
   </modules>
   <name>springcloud Maven Webapp</name>
   <url>http://maven.apache.org</url>

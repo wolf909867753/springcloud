@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wolf909867753/springcloud/ #配置git仓库地址
+          searchPaths: config #配置仓库路径
+          username:  #如果Git仓库为公开仓库，可以不填写用户名和密码
+          password:
+      label: master #配置仓库的分支
+
+
+server:
+  port: 8888
